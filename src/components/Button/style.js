@@ -10,6 +10,7 @@ export const ButtonBase = styled.button`
     font-weight: 600;
     margin: 5px;
     max-width: 160px;
+    cursor: pointer;
 
     &&:hover{
         background-color: #0e7182;
