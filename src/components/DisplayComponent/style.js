@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const DisplayBase = styled.div`
     background-color: #01a7c2;
-    height: 45px;
+    height: 40px;
     width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 8px;
+    margin-bottom: 10px;
 `
 
 export const Title = styled.p`
