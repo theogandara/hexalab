@@ -1,9 +1,11 @@
-const InputComponent = ({Label}) => {
+import { InputBase, Input, Span } from "./style"
+
+const InputComponent = ({ placeholder, register, name }) => {
     return (
-        <div>
-            <label>{Label}</label>
-            <input />
-        </div>
+        <InputBase>
+            <Span>R$</Span>
+            <Input register={register} name={name} placeholder={placeholder} />
+        </InputBase>
     )
 }
 
