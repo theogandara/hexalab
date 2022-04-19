@@ -1,10 +1,11 @@
 import InputComponent from "../components/Input"
+import DisplayValue from "../components/DisplayValue"
 
 const HomePage = () => {
     return (
-        <div>
-            <InputComponent Label={"Valor total da gorgeta"} />
-        </div>
+        <>
+            <h1>Hexalab</h1>
+        </>
     )
 }
 
