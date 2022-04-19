@@ -1,8 +1,9 @@
-function App() {
+import Routes from "./Routes/routes"
+import "../src/GlobalStyle/style.css"
+
+const App = () => {
   return (
-    <div className="App">
-      react app
-    </div>
+    <Routes />
   );
 }
 

@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #F2F6FF;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+}
