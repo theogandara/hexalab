@@ -41,6 +41,14 @@ export const Titles = styled.label`
 
 `
 
+export const TitlesForm = styled.label`
+    width: 90%;
+    font-size: 14px;
+    margin-left: 15px;
+    margin: 15px 0px 5px 10px ;
+    font-family: 'Mulish', sans-serif;
+`
+
 export const Main = styled.div`
     width: 50%;
     min-height: 350px;

@@ -2,7 +2,7 @@ import InputComponent from "../../components/Input"
 import DisplayComponent from "../../components/DisplayComponent"
 import Button from "../../components/Button"
 import { useState } from "react"
-import { Display, Titles, Main, ButtonCase, Header, Results, PageContent } from "./styles"
+import { Display, Titles, TitlesForm, Main, ButtonCase, Header, Results, PageContent } from "./styles"
 
 const HomePage = () => {
     const [valorTotal, setValorTotal] = useState("")
@@ -23,9 +23,9 @@ const HomePage = () => {
                     <DisplayComponent showValue={indvidual} />
                 </Results>
                 <Main>
-                    <Titles>Digite o valor total do pedido</Titles>
+                    <TitlesForm>Digite o valor total do pedido</TitlesForm>
                     <InputComponent icon={"R$"} type={"number"} onChange={(e) => setValorTotal(e.target.value)} placeholder={"Digite o valor aqui"} />
-                    <Titles>Quanto quer dar de gorgeta ?*</Titles>
+                    <TitlesForm>Quanto quer dar de gorgeta ?*</TitlesForm>
                     <ButtonCase>
                         <Button onClick={() => setGorgetaPerCent(5)} text={"5%"} />
                         <Button onClick={() => setGorgetaPerCent(10)} text={"10%"} />
@@ -33,7 +33,7 @@ const HomePage = () => {
                         <Button onClick={() => setGorgetaPerCent(25)} text={"25%"} />
                     </ButtonCase>
                     <InputComponent icon={"%"} value={gorgetaPerCent} type={"number"} onChange={(e) => setGorgetaPerCent(e.target.value)} placeholder={"Personalize aqui"} />
-                    <Titles>Quantas pessoas irão pagar ?*</Titles>
+                    <TitlesForm>Quantas pessoas irão pagar ?*</TitlesForm>
                     <InputComponent icon={"@"} type={"number"} onChange={(e) => setQuantityPeople(e.target.value)} placeholder={"Digite o valor aqui"} />
                 </Main>
             </Display>
